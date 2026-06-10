@@ -3,8 +3,8 @@ class Ccsl < Formula
 
   desc "Enhanced status line for Claude Code"
   homepage "https://github.com/yzhonda/statusline"
-  url "https://files.pythonhosted.org/packages/bd/47/cf7b6750a29f5794ec7fc153bba8d8f27ced31bb56e238f9385d7667f4b1/ccsl-1.0.13.tar.gz"
-  sha256 "42296f2d60145b5ea56e125b20f091d71471784f68a423b1d20828a9e108f2e8"
+  url "https://files.pythonhosted.org/packages/32/9f/d40a5b6d5e61d28b30cf490fee552d13c10c1f5385dec0a68416837a3aef/ccsl-1.0.14.tar.gz"
+  sha256 "38af093b3dd2a4cab6fe1463a8cf94948425d0bf6ce0bd060d9cbbacffe4985b"
   license "MIT"
 
   depends_on "python@3.12"
