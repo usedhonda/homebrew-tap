@@ -3,8 +3,8 @@ class Ccsl < Formula
 
   desc "Enhanced status line for Claude Code"
   homepage "https://github.com/usedhonda/statusline"
-  url "https://files.pythonhosted.org/packages/88/6c/f722fe8c07237818b6323e7810e2e84bc546aba26c6c08e63825cab77207/ccsl-1.0.27.tar.gz"
-  sha256 "17b37e240e3e413bd1a7dc455f3e8f9ada51194237bce857cc3537539c87b1a2"
+  url "https://files.pythonhosted.org/packages/71/ca/4134ce5e00f29c7369b40c97acacac133d0746f1ebb407d9a055f96eac02/ccsl-1.0.28.tar.gz"
+  sha256 "86414ac611d3b42622c5d1a84e449de7620ace3f6f75aeaed7c3b8e81734b73b"
   license "MIT"
 
   depends_on "python@3.12"
@@ -17,6 +17,12 @@ class Ccsl < Formula
     <<~EOS
       Run once to configure Claude Code:
         ccsl --setup
+
+      NOTE: the Homebrew tap is being retired. ccsl is a single
+      dependency-free file that can self-update — please reinstall via:
+        curl -fsSL https://raw.githubusercontent.com/usedhonda/statusline/main/statusline.py -o ~/.claude/statusline.py
+        python3 ~/.claude/statusline.py --setup
+        brew uninstall ccsl
     EOS
   end
 
